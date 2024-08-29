@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Registration</title>
+    <link rel="stylesheet" href="person.css">
+</head>
+<body style="background-image: url('Images/uni.jpg');">
+
+<div class="header">
+        <img src="C:\Users\PENSA EDITORIAL\Desktop\New folder\Images\logo.jpeg" alt="University Logo">
+        <p>Student Residence Management System</p>
+    </div>
+
+
+<nav class="navbar">    
+<ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="#">About</a></li>
+        <li><a href="#">Services</a></li>
+        <li><a href="#">Contact</a></li>
+    </ul>
+</nav>
+
+    <div class="container">
+        <div class="container-overlay"></div>
+        <div class="container-inner">
+        <div class="form-container">
+            
+             <form id="registrationForm" action="address.html" method="GET">
+            <h2>PERSONAL INFORMATION</h2>
+            <div class="form-row">
+                <div class="form-group">
+                    <label for="firstName">First Name</label>
+                    <input type="text" id="firstName" name="firstName" required>
+                </div>
+                <div class="form-group">
+                    <label for="dob">Date of Birth (DOB)</label>
+                    <input type="date" id="dob" name="dob" required>
+                </div>
+                <div class="form-group">
+                    <label for="email">Email Address</label>
+                    <input type="email" id="email" name="email" required>
+                </div>
+            </div>
+
+            <div class="form-row">
+                <div class="form-group">
+                    <label for="middleName">Middle Name (Optional)</label>
+                    <input type="text" id="middleName" name="middleName">
+                </div>
+                <div class="form-group">
+                    <label for="gender">Gender</label>
+                    <select id="gender" name="gender" required>
+                        <option value="" disabled selected>Select Gender</option>
+                        <option value="male">Male</option>
+                        <option value="female">Female</option>
+                        <option value="other">Other</option>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <label for="phoneNumber">Phone Number</label>
+                    <input type="tel" id="phoneNumber" name="phoneNumber" required>
+                </div>
+            </div>
+
+            <div class="form-row">
+                <div class="form-group">
+                    <label for="lastName">Last Name</label>
+                    <input type="text" id="lastName" name="lastName" required>
+                </div>
+                <div class="form-group">
+                    <label for="studentId">Student ID Number</label>
+                    <input type="text" id="studentId" name="studentId" required>
+                </div>
+                <div class="form-group">
+                    <label for="profilePicture">Profile Picture</label>
+                    <input type="file" id="profilePicture" name="profilePicture" required>
+                </div>
+            </div>
+
+            <div class="form-navigation">
+                <button class="next-button" onclick="validateForm()">Next</button>
+            </div>
+
+
+        </form>
+    </div>
+
+    <script src="script3.js"></script>
+
+
+ <footer>
+    <div class="footer-container">
+        <div class="footer-section logo-subscribe">
+           <div class="footer-logo">
+    <img src="Images/mylogo.png" alt="Company Logo">
+</div>
+            <form class="subscribe-form">
+                <label for="email">Subscribe Now</label>
+                <input type="email" id="email" placeholder="Enter your Email">
+                <button type="submit">Subscribe</button>
+            </form>
+        </div>
+        <div class="footer-section information">
+            <h4>Information</h4>
+            <ul>
+                <li><a href="#">About Us</a></li>
+                <li><a href="#">More Search</a></li>
+                <li><a href="#">Blog</a></li>
+                <li><a href="#">Testimonials</a></li>
+            </ul>
+        </div>
+        <div class="footer-section helpful-links">
+            <h4>Helpful Links</h4>
+            <ul>
+                <li><a href="#">Services</a></li>
+                <li><a href="#">Supports</a></li>
+                <li><a href="#">Terms & Condition</a></li>
+                <li><a href="#">Privacy Policy</a></li>
+            </ul>
+        </div>
+        <div class="footer-section our-services">
+            <h4>Our Services</h4>
+            <ul>
+                <li><a href="#">Website Designs</a></li>
+                <li><a href="#">Graphic Designs</a></li>
+                <li><a href="#">UI/UX Designs</a></li>
+                <li><a href="#">Mobile Apps Designs</a></li>
+            </ul>
+        </div>
+        <div class="footer-section contact-info">
+            <h4>Contact Us</h4>
+            <p><i class="fas fa-phone"></i> +233 591959974</p>
+            <p><i class="fas fa-envelope"></i> sendtobkay@gmail.com</p>
+            <div class="social-icons">
+                <a href="#"><i class="fab fa-facebook"></i></a>
+                <a href="#"><i class="fab fa-google"></i></a>
+                <a href="#"><i class="fab fa-twitter"></i></a>
+                <a href="#"><i class="fab fa-instagram"></i></a>
+            </div>
+        </div>
+    </div>
+    <div class="footer-bottom">
+        <p>2024 © MKAY IT Solutions. | All Rights reserved</p>
+        <div class="footer-bottom-links">
+            <a href="#">FAQ</a>
+            <a href="#">Privacy</a>
+            <a href="#">Terms & Condition</a>
+        </div>
+    </div>
+</footer>
+</body>
+</html>
+
+
