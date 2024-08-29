@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Booking Summary</title>
+    <link rel="stylesheet" href="summary.css">
+</head>
+<body style="background-image: url('Images/uni.jpg');">
+
+    <div class="header">
+        <img src="C:\Users\PENSA EDITORIAL\Desktop\New folder\Images\logo.jpeg" alt="University Logo">
+        <p>Student Residence Management System</p>
+    </div>
+
+    <nav class="navbar">    
+<ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="#">About</a></li>
+        <li><a href="#">Services</a></li>
+        <li><a href="#">Contact</a></li>
+    </ul>
+</nav>
+
+    <div class="container">
+        <div class="container-overlay"></div>
+        <div class="container-inner">
+        <div class="form-container">
+        <main>
+            <h1>BOOKING SUMMARY</h1>
+            <div class="summary-table">
+                <div class="summary-row">
+                    <label>Ref. No.</label>
+                    <input type="text" id="refNo" readonly>
+                </div>
+                <div class="summary-row">
+                    <label>Student ID</label>
+                    <input type="text" id="studentId" readonly>
+                </div>
+                <div class="summary-row">
+                    <label>Residence</label>
+                    <input type="text" id="residence" readonly>
+                </div>
+                <div class="summary-row">
+                    <label>Room No.</label>
+                    <input type="text" id="roomNo" readonly>
+                </div>
+                <div class="summary-row">
+                    <label>Date Booked</label>
+                    <input type="text" id="dateBooked" readonly>
+                </div>
+            </div>
+            <div class="form-navigation">
+           <a href="residential.html" id="prevBtnLink">
+                        <button type="button" id="prevBtn">Previous</button>
+                    </a>
+                        <button id="clearBtn" class="clear-button">Clear</button>
+             <a href="">
+            <button class="btn-next">Next</button>
+        </div>
+            
+        </main>
+
+        
+    </div>
+
+     <footer>
+    <div class="footer-container">
+        <div class="footer-section logo-subscribe">
+           <div class="footer-logo">
+    <img src="Images/mylogo.png" alt="Company Logo">
+</div>
+            <form class="subscribe-form">
+                <label for="email">Subscribe Now</label>
+                <input type="email" id="email" placeholder="Enter your Email">
+                <button type="submit">Subscribe</button>
+            </form>
+        </div>
+        <div class="footer-section information">
+            <h4>Information</h4>
+            <ul>
+                <li><a href="#">About Us</a></li>
+                <li><a href="#">More Search</a></li>
+                <li><a href="#">Blog</a></li>
+                <li><a href="#">Testimonials</a></li>
+            </ul>
+        </div>
+        <div class="footer-section helpful-links">
+            <h4>Helpful Links</h4>
+            <ul>
+                <li><a href="#">Services</a></li>
+                <li><a href="#">Supports</a></li>
+                <li><a href="#">Terms & Condition</a></li>
+                <li><a href="#">Privacy Policy</a></li>
+            </ul>
+        </div>
+        <div class="footer-section our-services">
+            <h4>Our Services</h4>
+            <ul>
+                <li><a href="#">Website Designs</a></li>
+                <li><a href="#">Graphic Designs</a></li>
+                <li><a href="#">UI/UX Designs</a></li>
+                <li><a href="#">Mobile Apps Designs</a></li>
+            </ul>
+        </div>
+        <div class="footer-section contact-info">
+            <h4>Contact Us</h4>
+            <p><i class="fas fa-phone"></i> +233 591959974</p>
+            <p><i class="fas fa-envelope"></i> sendtobkay@gmail.com</p>
+            <div class="social-icons">
+                <a href="#"><i class="fab fa-facebook"></i></a>
+                <a href="#"><i class="fab fa-google"></i></a>
+                <a href="#"><i class="fab fa-twitter"></i></a>
+                <a href="#"><i class="fab fa-instagram"></i></a>
+            </div>
+        </div>
+    </div>
+    <div class="footer-bottom">
+        <p>2024 © MKAY IT Solutions. | All Rights reserved</p>
+        <div class="footer-bottom-links">
+            <a href="#">FAQ</a>
+            <a href="#">Privacy</a>
+            <a href="#">Terms & Condition</a>
+        </div>
+    </div>
+</footer>
+
+<script src="summary.js"></script>
+</body>
+</html>

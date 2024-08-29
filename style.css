@@ -1,0 +1,279 @@
+html, body, ul, li {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #9c003b; /* Dark red background color */
+    color: white;
+    text-align: center;
+    background-size: cover; /* Ensures the image covers the entire screen */
+    background-position: center; /* Centers the background image */
+    background-repeat: no-repeat; /* Prevents the image from repeating */
+    background-attachment: fixed; /* Keeps the background fixed while scrolling */
+    overflow-x: hidden; /* Prevent horizontal scrolling */
+    height: 100%; /* Ensures it covers the full height of the page */
+
+.navbar {
+    background-color: #9c003b; /* Adjust this color to match your design */
+    overflow: hidden;
+    padding: 10px 0;
+}
+
+.navbar ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+}
+
+.navbar li {
+    margin: 0 10px;
+}
+
+.navbar a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 20px;
+    text-decoration: none;
+    font-size: 18px;
+}
+
+.navbar a:hover {
+    background-color: gold; /* Adjust this color to match your design */
+    color: darkred;
+
+}
+
+.navbar a.active {
+    background-color: #6f1e23; /* Adjust this color to highlight the current step */
+}
+
+.header {
+    background-color: white;
+    padding: 20px;
+}
+
+.header img {
+    width: 180px; /* Increased size of the logo */
+    position: absolute;
+    left: 30px; /* Adjust the spacing from the left corner */
+}
+
+.header h1 {
+    margin: 0;
+    color: black;
+    font-size: 24px;
+}
+
+.content {
+    background-image: url("uni.jpg"); /* Placeholder for background image */
+    background-size: cover;
+    background-position: center;
+    min-width: 100vh;
+    position: relative;
+    color: white;
+    padding: 100px 20px;
+    position: relative;
+    z-index: 1;
+    background-attachment: fixed;
+
+}
+
+.content-overlay {
+    background-color: rgba(156, 0, 59, 0.8); /* Dark red overlay */
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+}
+
+.content-inner {
+    position: relative;
+    z-index: 1;
+}
+
+.content h2 {
+    font-size: 36px;
+    margin-top: 60px; /* Moves the h2 down */
+    margin-bottom: 34px; 
+}
+
+.line {
+    width: 100px; /* Adjust the width of the line */
+    height: 4px; /* Adjust the thickness of the line */
+    background-color: gold; /* Color of the line */
+    margin: 20px auto; /* Centers the line and adds spacing */
+}
+
+.content p {
+    font-size: 28px;
+    margin: -10px 0;
+    color: gold;
+}
+
+.btn-book {
+    background-color: white;
+    color: black;
+    border: none;
+    padding: 15px 30px;
+    font-size: 20px;
+    cursor: pointer;
+    border-radius: 5px;
+    text-transform: uppercase;
+    font-weight: bold;
+    margin-top: 50px;
+    margin-left: auto;
+    margin-right: auto;
+
+}
+
+.btn-book:hover {
+    background-color: gold; /* Change background to dark red on hover */
+    color: darkred; /* Change text color to white on hover */
+}
+
+
+/* Footer */
+footer {
+    background-color: #f1f1f1;
+    padding: 40px 0;
+    font-family: Arial, sans-serif;
+}
+
+.footer-container {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.footer-logo img {
+    max-width: 400px; /* Adjust the size as needed */
+    height: auto;
+    display: flow;
+    margin-bottom: -130px; /* Space below the logo */
+    margin-top: -50px;
+    margin-left: -95px;
+}
+
+.footer-section {
+    flex: 1;
+    margin: 20px;
+    min-width: 200px;
+}
+
+.footer-section h4 {
+    font-weight: bold;
+    margin-bottom: 20px;
+    margin-top: -50px;
+    color: darkred;
+}
+
+.footer-section p {
+    margin: 0 0 15px;
+    color: darkred;
+}
+
+.footer-section ul {
+    list-style: none;
+    padding: 0px;
+}
+
+.footer-section ul li {
+    margin-bottom: -70px;
+   
+}
+
+.footer-section ul li a {
+    text-decoration: none;
+    color: #333;
+    line-height: 0;
+}
+
+.subscribe-form {
+    display: flex;
+    flex-direction: column;
+}
+
+
+.subscribe-form label{
+    color: darkred;
+}
+
+.subscribe-form input {
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.subscribe-form button {
+    padding: 10px;
+    background-color: #333;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.social-icons a {
+    text-decoration: none;
+    color: #333;
+    font-size: 20px;
+    margin-right: 10px;
+}
+
+.footer-bottom {
+    text-align: center;
+    padding: 20px 0;
+    background-color: #e2e2e2;
+    border-top: 1px solid #ccc;
+}
+
+.footer-bottom p{
+    color: darkseagreen;
+}
+
+.footer-bottom-links a {
+    margin: 0 10px;
+    text-decoration: none;
+    color: #333;
+}
+
+
+
+
+
+/* Responsive adjustments */
+@media (min-width: 600px) {
+    .form-group {
+        width: 48%;
+    }
+}
+
+@media (min-width: 768px) {
+    .container {
+        padding: 40px;
+    }
+
+
+@media (max-width: 768px) {
+    .footer-container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .footer-section {
+        margin-bottom: 20px;
+        text-align: center;
+    }
+}

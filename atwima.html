@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Atwima Hall Booking</title>
+    <link rel="stylesheet" href="atwima.css">
+</head>
+<body style="background-image: url('Images/uew-atwima-hall.webp');">
+
+<div class="header">
+        <img src="C:\Users\PENSA EDITORIAL\Desktop\New folder\Images\logo.jpeg" alt="University Logo">
+        <p>Student Residence Management System</p>
+    </div>
+
+
+    <nav class="navbar">    
+<ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="#">About</a></li>
+        <li><a href="#">Services</a></li>
+        <li><a href="#">Contact</a></li>
+    </ul>
+</nav>
+
+    <div class="container">
+        <div class="container-overlay"></div>
+        <div class="container-inner">
+            <div class="form-container">
+                <form id="registrationForm" action="summary.html" method="GET">
+        <h2>ATWIMA HALL</h2>
+        <form action="#" method="post" enctype="multipart/form-data">
+            <div class="form-row">
+                <div class="form-group">
+                    <label for="block">Block</label>
+                    <select id="block" name="block" required>
+                        <option value="" disabled selected>Select Block</option>
+                        <option value="A">Block A</option>
+                        <option value="B">Block B</option>
+                        <option value="C">Block C</option>
+                        <option value="D">Block D</option>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <label for="room">Select Room</label>
+                    <select id="room" name="room" required>
+                        <option value="" disabled selected>Select Room</option>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <label for="price">Price Per Head</label>
+                    <input type="text" id="price" name="price" readonly>
+                </div>
+            </div>
+
+            <div class="form-navigation">
+               <a href="residential.html" id="prevBtnLink">
+                        <button type="button" id="prevBtn">Previous</button>
+                    </a>
+
+             <a href="summary.html">
+            <button class="btn-next">Next</button>
+            </a>
+            </div>
+
+                         
+
+        </form>
+    </div>
+
+    <script src="atwima-hall.js"></script>
+
+     <footer>
+    <div class="footer-container">
+        <div class="footer-section logo-subscribe">
+           <div class="footer-logo">
+    <img src="Images/mylogo.png" alt="Company Logo">
+</div>
+            <form class="subscribe-form">
+                <label for="email">Subscribe Now</label>
+                <input type="email" id="email" placeholder="Enter your Email">
+                <button type="submit">Subscribe</button>
+            </form>
+        </div>
+        <div class="footer-section information">
+            <h4>Information</h4>
+            <ul>
+                <li><a href="#">About Us</a></li>
+                <li><a href="#">More Search</a></li>
+                <li><a href="#">Blog</a></li>
+                <li><a href="#">Testimonials</a></li>
+            </ul>
+        </div>
+        <div class="footer-section helpful-links">
+            <h4>Helpful Links</h4>
+            <ul>
+                <li><a href="#">Services</a></li>
+                <li><a href="#">Supports</a></li>
+                <li><a href="#">Terms & Condition</a></li>
+                <li><a href="#">Privacy Policy</a></li>
+            </ul>
+        </div>
+        <div class="footer-section our-services">
+            <h4>Our Services</h4>
+            <ul>
+                <li><a href="#">Website Designs</a></li>
+                <li><a href="#">Graphic Designs</a></li>
+                <li><a href="#">UI/UX Designs</a></li>
+                <li><a href="#">Mobile Apps Designs</a></li>
+            </ul>
+        </div>
+        <div class="footer-section contact-info">
+            <h4>Contact Us</h4>
+            <p><i class="fas fa-phone"></i> +233 591959974</p>
+            <p><i class="fas fa-envelope"></i> sendtobkay@gmail.com</p>
+            <div class="social-icons">
+                <a href="#"><i class="fab fa-facebook"></i></a>
+                <a href="#"><i class="fab fa-google"></i></a>
+                <a href="#"><i class="fab fa-twitter"></i></a>
+                <a href="#"><i class="fab fa-instagram"></i></a>
+            </div>
+        </div>
+    </div>
+    <div class="footer-bottom">
+        <p>2024 © MKAY IT Solutions. | All Rights reserved</p>
+        <div class="footer-bottom-links">
+            <a href="#">FAQ</a>
+            <a href="#">Privacy</a>
+            <a href="#">Terms & Condition</a>
+        </div>
+    </div>
+</footer>
+</body>
+</html>
+
+

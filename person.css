@@ -1,0 +1,324 @@
+html, body {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #9c003b; /* Dark red background color */
+    color: white;
+    text-align: center;
+    background-size: cover; /* Ensures the image covers the entire screen */
+    background-position: center; /* Centers the background image */
+    background-repeat: no-repeat; /* Prevents the image from repeating */
+    background-attachment: fixed; /* Keeps the background fixed while scrolling */
+    overflow-x: hidden; /* Prevent horizontal scrolling */
+    height: 100%; /* Ensures it covers the full height of the page */
+
+    
+
+    .navbar {
+    background-color: #9c003b; /* Adjust this color to match your design */
+    padding: 10px 0;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+    z-index: 1000;
+    position: relative;
+}
+
+.navbar ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    color: white;
+}
+
+.navbar li {
+    margin: 0 10px;
+}
+
+.navbar a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 20px;
+    text-decoration: none;
+    font-size: 18px;
+}
+
+.navbar a:hover {
+    background-color: gold; /* Adjust this color to match your design */
+    color: darkred;
+
+}
+
+.navbar a.active {
+    background-color: #6f1e23; /* Adjust this color to highlight the current step */
+}
+
+.header {
+     background-color: white;
+    padding: 20px;
+     position: relative; /* Remove fixed positioning to allow scrolling */
+    z-index: 100; /* Ensure it stays above other elements */
+}
+}
+
+.header img {
+    width: 180px;
+    position: absolute;
+    left: 30px; /* Adjust the spacing from the left corner */
+}
+
+.header h1 {
+     margin: 0;
+    color: black;
+    font-size: 22px;
+}
+   
+}
+
+.container {
+    background-size: cover;
+    background-position: center;
+    position: relative;
+    color: white;
+}
+
+.container-overlay {
+    background-color: rgba(156, 0, 59, 0.8); /* Dark red overlay */
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+}
+
+.container-inner {
+    position: relative;
+    z-index: 1;
+}
+
+
+}
+
+.form-container {
+    background-color: #800000; /* Maroon background */
+    color: white;
+    padding: 40px;
+}
+
+.form-container h2 {
+    font-size: 24px;
+    margin-bottom: 40px;
+    margin-top: 10px;
+}
+
+.form-row {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 25px;
+    align-items: center;
+}
+
+.form-group {
+    width: 100%;
+    max-width: 500px;
+    margin-right: 100  /* Centers the form content */
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 8px;
+    align-items: flex-start; /* Align labels and inputs to the start */
+}
+
+.form-group label {
+    display: flex;
+    margin-bottom: 5px;
+    font-weight: bold;
+    color: gold;
+    width: 100%;
+     margin-left: 50px;
+}
+
+.form-group input, .form-group select {
+    width: 80%;
+    padding: 10px;
+    border-radius: 20px;
+    border: 1px solid #ccc;
+    box-sizing: border-box; 
+    margin: 0px;
+    font-family: sans-serif;
+    font-weight: normal; 
+    font-size: 14px;
+}
+
+
+
+.form-group input[type="file"] {
+    padding: 5;
+     
+}
+
+.form-navigation {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 50px;
+}
+
+.form-navigation p {
+    margin: 0;
+    font-size: 16px;
+}
+
+.next-button {
+    background-color: white;
+    color: black;
+    border: none;
+    padding: 15px 30px;
+    font-size: 13px;
+    cursor: pointer;
+    border-radius: 5px;
+    text-transform: uppercase;
+    font-weight: bold;
+    margin-top: -10px;
+    margin-left: 1000px;
+}
+
+.next-button:hover {
+   background-color: gold; /* Change background to dark red on hover */
+    color: darkred;
+}
+
+.progress-bar {
+    width: 50%;
+    background-color: #ffffff;
+    height: 10px;
+    border-radius: 5px;
+    margin-left: 320px;
+    align-items: center;
+    margin-top: -25px;
+}
+
+
+.progress {
+    height: 10px; /* Height of the progress indicator */
+    background-color: greenyellow; /* Color of the progress indicator */
+    border-radius: 4px 0 0 4px;
+    transition: width 0.3s ease-in-out; /* Smooth transition effect */
+}
+
+/* Footer */
+footer {
+    background-color: #f1f1f1;
+    padding: 40px 10px;
+    font-family: Arial, sans-serif;
+    margin-top: 20px;
+    flex: 1;
+}
+
+.footer-container {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    margin: 0 auto;
+    width: 100%;
+}
+
+.footer-logo img {
+    max-width: 400px; /* Adjust the size as needed */
+    height: auto;
+    display: flow;
+    margin-bottom: -130px; /* Space below the logo */
+    margin-top: -50px;
+    margin-left: -95px;
+}
+
+.footer-section {
+    flex: 1;
+    margin: 20px;
+    min-width: 200px;
+}
+
+.footer-section h4 {
+    font-weight: bold;
+    margin-bottom: 10px;
+    margin-top: -40px;
+    color: darkred;
+}
+
+.footer-section p {
+    margin: 0 0 15px;
+    color: darkred;
+}
+
+.footer-section ul {
+    list-style: none;
+    padding: 0px;
+}
+
+.footer-section ul li {
+    margin-bottom: 15px;
+   
+}
+
+.footer-section ul li a {
+    text-decoration: none;
+    color: #333;
+    line-height: 0;
+}
+
+.subscribe-form {
+    display: flex;
+    flex-direction: column;
+}
+
+
+.subscribe-form label{
+    color: darkred;
+}
+
+.subscribe-form input {
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.subscribe-form button {
+    padding: 10px;
+    background-color: #333;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.social-icons a {
+    text-decoration: none;
+    color: #333;
+    font-size: 20px;
+    margin-right: 10px;
+}
+
+.footer-bottom {
+    text-align: center;
+    padding: 20px 0;
+    background-color: #e2e2e2;
+    border-top: 1px solid #ccc;
+}
+
+.footer-bottom p{
+    color: darkseagreen;
+}
+
+.footer-bottom-links a {
+    margin: 0 10px;
+    text-decoration: none;
+    color: #333;
+}
